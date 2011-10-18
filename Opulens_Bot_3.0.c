@@ -30,8 +30,8 @@ void ZRUser01(float *myState, float *otherState, float time)
 #define theta       mag
 #define dirs        Laser
 
-  float opulens[3] = {0.0, -0.6, 0.0};
-  float opulens_spin_point[3] = {0.04, -0.6, 0.0};
+  float opulens[3] = {0.0, -0.35, -0.2};
+  float opulens_spin_point[3] = {0.04, -0.35, -0.2};
   float Laser[3] = {0.4, 0.0, 0.0};
   float difference[3], target[3];
   float dist, mag, tandist, xangle;
@@ -72,7 +72,7 @@ void ZRUser01(float *myState, float *otherState, float time)
 	  action = 1;
       y0received = 1;
 	}
-      break;
+      break; 
     }
     
   if(!time || y0received)
